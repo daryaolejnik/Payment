@@ -49,5 +49,12 @@ changeBuildType(RelativeId("Discovery_DiscoveryBuild")) {
                 commandArgs = "--pull"
             }
         }
+        update<DockerCommandStep>(2) {
+            name = "Docker-Push"
+            commandType = push {
+                namesAndTags = "artemkulish/demo4:payment"
+                removeImageAfterPush = true
+            }
+        }
     }
 }
