@@ -39,13 +39,14 @@ changeBuildType(RelativeId("Discovery_DiscoveryBuild")) {
     }
     steps {
         update<DockerCommandStep>(1) {
+            name = "Docker-build"
             commandType = build {
                 source = file {
                     path = "Dockerfile"
                 }
                 contextDir = ""
                 namesAndTags = "artemkulish/demo4:payment"
-                commandArgs = ""
+                commandArgs = "--pull"
             }
         }
     }
