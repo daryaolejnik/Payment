@@ -1,5 +1,5 @@
 FROM openjdk:11
-#ENV TZ=Europe/Kiev
+ENV TZ=Europe/Kiev
 COPY target/kick-scooter-payment.jar kick-scooter-payment.jar
 #COPY sumo_credentials.txt /home/sumo_credentials.txt
 #COPY sumo-sources.json /home/sumo-sources.json
