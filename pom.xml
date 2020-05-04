@@ -10,7 +10,6 @@
     </parent>
     <groupId>com.softserve</groupId>
     <artifactId>payment-service</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
     <name>kick-scooter-payment-service</name>
     <description>Payment service</description>
 
