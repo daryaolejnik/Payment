@@ -111,7 +111,7 @@
                 		<version>3.8.0</version>
                 		<configuration>
                 		<changeLogFile>./database-update/payment.xml</changeLogFile>    
-                		<propertyFile>./database-update/liquibase.properties</propertyFile>
+                		<propertyFile>/opt/liquibase/kick-scooter/payment/liquibase.properties</propertyFile>
                 		<promptOnNonLocalDatabase>false</promptOnNonLocalDatabase>
                 		</configuration>
 	  	 	</plugin>	
